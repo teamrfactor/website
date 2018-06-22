@@ -13,6 +13,10 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
+	<!-- Bootstrap Dropdown Hover CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
 	<!-- Custom styles for this template -->
 	<link href="css/gallery.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
@@ -30,9 +34,16 @@
 			<a class="py-2 d-none d-md-inline-block" href="about.html">About Us</a>
 			<a class="py-2 d-none d-md-inline-block" href="events.html">Events</a>
 			<a class="py-2 d-none d-md-inline-block" href="outreach.html">Outreach</a>
-			<a class="py-2 d-none d-md-inline-block" href="seasons.html">Seasons</a>
+			<a class="py-2 d-none d-md-inline-block dropdown dropdown-toggle" href="#" data-toggle="dropdown" data-hover="dropdown">
+			  Seasons
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item text-black-50">2016 &#124; FIRST Stronghold</a>
+				<a class="dropdown-item text-black-50">2017 &#124; FIRST Steamworks</a>
+				<a class="dropdown-item" href="2018.html">2018 &#124; FIRST POWER UP</a>
+			</div>
 			<a class="py-2 d-none d-md-inline-block" href="handbooks.html">Handbooks</a>
-			<a class="py-2 d-none d-md-inline-block" href="gallery.html">Gallery</a>
+			<a class="py-2 d-none d-md-inline-block" style="color:darkorange;" href="gallery.html">Gallery</a>
 			<a class="py-2 d-none d-md-inline-block" href="sponsors.html">Sponsors</a>
 			<a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
 			<a class="py-2 d-none d-md-inline-block" href="https://www.firstinspires.org" target="_blank">FIRST&reg;</a>
@@ -46,14 +57,25 @@
 				<h1 class="jumbotron-heading" style="font-weight: 700; color:darkorange">Gallery</h1>
 				<p class="lead text-muted">Check out all our photos here, or on Instagram!</p>
 				<p>
-				  <a href="#" class="btn btn-outline-warning my-2"><i class="fab fa-instagram"></i> Follow us</a>
+					<a href="#" class="btn btn-outline-warning my-2"><i class="fab fa-instagram"></i> Follow us</a>
 				</p>
 			</div>
 		</section>
 
 		<div class="album py-5 bg-light">
-			<div class="container">
-				<!-- Insert Pixlee instagram feed embed here -->
+			<div class="container-fluid">
+				<div id="pixlee_container"></div>
+				<script type="text/javascript">
+					window.PixleeAsyncInit = function() {
+						Pixlee.init({
+							apiKey: 'En8Bn5u0fg7mer9I2ecT'
+						});
+						Pixlee.addSimpleWidget({
+							widgetId: '5583'
+						});
+					};
+				</script>
+				<script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
 			</div>
 		</div>
 
@@ -68,32 +90,32 @@
 			<div class="col-6 col-md">
 				<h5>Events &amp; Outreach</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Mahindra &amp; Mahindra</a></li>
-					<li><a class="text-muted" href="#">MindSplash</a></li>
-					<li><a class="text-muted" href="#">Children for Change</a></li>
-					<li><a class="text-muted" href="#">Equal Streets</a></li>
-					<li><a class="text-muted" href="#">Asha for Education</a></li>
-					<li><a class="text-muted" href="#">Women in STEM</a></li>
+					<li><a class="text-muted" href="events.html">Mahindra &amp; Mahindra</a></li>
+					<li><a class="text-muted" href="outreach.html">MindSplash</a></li>
+					<li><a class="text-muted" href="outreach.html">Children for Change</a></li>
+					<li><a class="text-muted" href="outreach.html">Equal Streets</a></li>
+					<li><a class="text-muted" href="outreach.html">Asha for Education</a></li>
+					<li><a class="text-muted" href="outreach.html">Women in STEM</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-md">
 				<h5>Handbooks &amp; Manuals</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Chairman's Award</a></li>
-					<li><a class="text-muted" href="#">Robot &amp; Engineering</a></li>
-					<li><a class="text-muted" href="#">Engineering&nbsp;Inspiration</a></li>
-					<li><a class="text-muted" href="#">Safety Manual</a></li>
-					<li><a class="text-muted" href="#">Game &amp; Alliance</a></li>
-					<li><a class="text-muted" href="#">Marketing &amp; Outreach</a></li>
-					<li><a class="text-muted" href="#">Team &amp; Organization</a></li>
-					<li><a class="text-muted" href="#">FLL Manual for Coaches</a></li>
+					<li><a class="text-muted" href="handbooks/Chairmans.pdf">Chairman's Award</a></li>
+					<li><a class="text-muted" href="handbooks/Robot_and_Engineering.pdf">Robot &amp; Engineering</a></li>
+					<li><a class="text-muted" href="handbooks/Engineering_Inspiration.pdf">Engineering&nbsp;Inspiration</a></li>
+					<li><a class="text-muted" href="handbooks/Safety_Manual.pdf">Safety Manual</a></li>
+					<li><a class="text-muted" href="handbooks/Game_and_Alliance.pdf">Game &amp; Alliance</a></li>
+					<li><a class="text-muted" href="handbooks/Marketing_and_Outreach.pdf">Marketing &amp; Outreach</a></li>
+					<li><a class="text-muted" href="handbooks/Team_and_Organisation.pdf">Team &amp; Organization</a></li>
+					<li><a class="text-muted" href="handbooks/FLL_Manual.pdf">FLL Manual for Coaches</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-md">
 				<h5>About</h5>
 				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Team</a></li>
-					<li><a class="text-muted" href="#">Achievements</a></li>
+					<li><a class="text-muted" href="about.html">Team</a></li>
+					<li><a class="text-muted" href="about.html">Achievements</a></li>
 				</ul>
 			</div>
 		</div>
@@ -102,24 +124,46 @@
 		<a class="navbar-brand" href="#"><img src="image/first_bw.png" alt="FIRST logo" style="max-height:48px; margin-top:5%;"></a>
 	</nav>
 	<nav class="navbar bottom navbar-light bg-dark justify-content-center">
-		<a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-instagram"><i class="fab fa-facebook-f"></i></a>
-		<a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-instagram"><i class="fab fa-instagram"></i></a>
-		<a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-github"><i class="fab fa-github-alt"></i></a>
-		<a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-email"><i class="fas fa-envelope"></i></a>
+		<a href="https://www.facebook.com/team6024/" target="_blank" class="btn-social btn-facebook"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.instagram.com/team6024/" target="_blank" class="btn-social btn-instagram"><i class="fab fa-instagram"></i></a>
+		<a href="https://github.com/teamrfactor/website" target="_blank" class="btn-social btn-github"><i class="fab fa-github-alt"></i></a>
+		<a href="mailto:nilesh.wistem@gmail.com?subject=FRC_Query" target="_blank" class="btn-social btn-email"><i class="fas fa-envelope"></i></a>
+		<a href="https://www.thebluealliance.com/team/6024" target="_blank" class="btn-social btn-facebook"><img src="image/tba.png" alt="the blue alliance" style="max-height: 100%; max-width: 100%;"></a>
 	</nav>
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script>
 		window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
 	</script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.min.js"></script>
+	<script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+	</script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+	<script type="text/javascript">
+		window.PixleeAsyncInit = function() {
+			Pixlee.init({
+				apiKey: 'En8Bn5u0fg7mer9I2ecT'
+			});
+			Pixlee.addSimpleWidget({
+				widgetId: '5583'
+			});
+		};
+	</script>
+	<!-- Bootstrap Dropdown Hover JS -->
+	<script src="js/bootstrap-dropdownhover.min.js"></script>
 </body>
 
 </html>

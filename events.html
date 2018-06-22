@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
+
+	<title>Team R Factor &#124; Events</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Bootstrap Dropdown Hover CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/events.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="eden.css" media="screen">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<nav class="site-header sticky-top py-1">
+		<div class="container d-flex flex-column flex-md-row justify-content-between">
+			<a class="navbar-brand" href="index.html">
+         		<img src="image/rfactor.png" alt="R Factor logo" height="32">
+        	</a>
+			<a class="py-2 d-none d-md-inline-block" href="about.html">About Us</a>
+			<a class="py-2 d-none d-md-inline-block" style="color:darkorange;" href="events.html">Events</a>
+			<a class="py-2 d-none d-md-inline-block" href="outreach.html">Outreach</a>
+			<a class="py-2 d-none d-md-inline-block dropdown dropdown-toggle" href="#" data-toggle="dropdown" data-hover="dropdown">
+			  Seasons
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item text-black-50">2016 &#124; FIRST Stronghold</a>
+				<a class="dropdown-item text-black-50">2017 &#124; FIRST Steamworks</a>
+				<a class="dropdown-item" href="2018.html">2018 &#124; FIRST POWER UP</a>
+			</div>
+			<a class="py-2 d-none d-md-inline-block" href="handbooks.html">Handbooks</a>
+			<a class="py-2 d-none d-md-inline-block" href="gallery.html">Gallery</a>
+			<a class="py-2 d-none d-md-inline-block" href="sponsors.html">Sponsors</a>
+			<a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+			<a class="py-2 d-none d-md-inline-block" href="https://www.firstinspires.org" target="_blank">FIRST&reg;</a>
+		</div>
+	</nav>
+
+	<main role="main">
+
+		<section class="jumbotron text-center">
+			<div class="container">
+				<h1 class="jumbotron-heading" style="font-weight: 700; color:darkorange">Events</h1>
+				<p class="lead text-muted">Check out all our events!</p>
+			</div>
+		</section>
+
+		<div class="album py-5 bg-light">
+			<div class="container-fluid">
+				<p class="h1 text-center" style="font-weight: 500;">Upcoming Events</p> <br>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="image/wro.png" alt="Card image cap" style="padding: 5%">
+							<div class="card-body">
+								<h3 class="card-title text-center">World Robot Olympiad Mumbai Regionals 2018</h3>
+								<p class="card-text">We're proud to be running the World Robot Olympiad's (WRO) Mumbai regionals on August 18th and 19th at the Chatrabhuj Narsee International School.
+									<br>
+									<a href="http://www.wroboto.org" target="_blank">Learn More.</a>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-secondary disabled">Aug 18-19</button>
+										<div title="Add to Calendar" class="addeventatc">
+											Add to Calendar
+											<span class="start">08/18/2018 08:30 AM</span>
+											<span class="end">08/19/2018 5:15 PM</span>
+											<span class="timezone">Asia/Kolkata</span>
+											<span class="title">WRO Mumbai Regionals 2018</span>
+											<span class="description">World Robot Olympiad Regionals for the Mumbai/Thane Region</span>
+											<span class="location">Chhatrabhuj Narsee International School, Kandivali East</span>
+										</div>
+									</div>
+									<small class="text-muted" id="timer_wro"></small>
+									<script>
+										// Set the date we're counting down to
+										var countDownDate = new Date("Aug 18, 2018 08:30:00").getTime();
+
+										// Update the count down every 1 second
+										var x = setInterval(function() {
+
+											// Get todays date and time
+											var now = new Date().getTime();
+
+											// Find the distance between now an the count down date
+											var distance = countDownDate - now;
+
+											// Time calculations for days, hours, minutes and seconds
+											var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+											var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+											var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+											var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+											// Display the result in the element with id="timer_wro"
+											document.getElementById("timer_wro").innerHTML = days + "d " + hours + "h " +
+												minutes + "m " + seconds + "s ";
+
+											// If the count down is finished, write some text
+											if (distance < 0) {
+												clearInterval(x);
+												document.getElementById("timer_wro").innerHTML = "EXPIRED";
+											}
+										}, 1000);
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="image/automation_expo.png" alt="Card image cap" style="padding: 5%">
+							<div class="card-body">
+								<h3 class="card-title text-center">Automation India Expo 2018</h3>
+								<p class="card-text">We've got a booth at the Automation India Expo 2018, being held at the Bombay Convention &amp; Exhibition Center.
+									<br>
+									<a href="https://www.automationindiaexpo.com/" target="_blank">Learn More.</a>
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-secondary disabled">Aug 29 - Sep 1</button>
+										<div title="Add to Calendar" class="addeventatc">
+											Add to Calendar
+											<span class="start">08/29/2018 10:00 AM</span>
+											<span class="end">09/01/2018 5:00 PM</span>
+											<span class="timezone">Asia/Kolkata</span>
+											<span class="title">Automation India Expo</span>
+											<span class="description">Team R Factor has a stall at the Automation India Expo 2018</span>
+											<span class="location">Bombay Convention &amp; Exhibition Center, Goregaon East</span>
+										</div>
+									</div>
+									<small class="text-muted" id="timer_autoexpo"></small>
+									<script>
+										// Set the date we're counting down to
+										var countDownDate1 = new Date("Aug 29, 2018 10:00:00").getTime();
+
+										// Update the count down every 1 second
+										var x1 = setInterval(function() {
+
+											// Get todays date and time
+											var now1 = new Date().getTime();
+
+											// Find the distance between now an the count down date
+											var distance1 = countDownDate1 - now1;
+
+											// Time calculations for days, hours, minutes and seconds
+											var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+											var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+											var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+											var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+
+											// Display the result in the element with id="timer_autoexpo"
+											document.getElementById("timer_autoexpo").innerHTML = days1 + "d " + hours1 + "h " +
+												minutes1 + "m " + seconds1 + "s ";
+
+											// If the count down is finished, write some text
+											if (distance1 < 0) {
+												clearInterval(x1);
+												document.getElementById("timer_autoexpo").innerHTML = "EXPIRED";
+											}
+										}, 1000);
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<p class="h1 text-center" style="font-weight: 500;">Past Events</p> <br>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="image/mahindra_mahindra.png" alt="Card image cap">
+							<div class="card-body">
+								<h3 class="card-title text-center">Mahindra &amp; Mahindra Plant Visit</h3>
+								<p class="card-text">Indian car manufacturer Mahindra &amp; Mahindra invited Team R Factor to their car production plant in Chakan, Maharashtra for a tour around their facilities.
+									<br><a href="http://www.mahindra.com/" target="_blank">Learn More.</a>
+								</p>
+								<p>
+									<a href="#" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">See our letter to the Mahindra &amp; Mahindra team.</a>
+								</p>
+								<div class="collapse" id="collapseExample">
+									<div class="card card-body">
+										It was an incredible learning experience for all of us on the team, and we left the plant with new knowledge and enthusiasm for technology and automation. As a robotics team, seeing the practical real life application of robotics filled us with a sense
+										of complete awe, and gratitude to you, for giving us this opportunity. Special thanks to Ms. Preeti Sahu, Mr. Rajesh Dubey, Mr. Shridhar B and Mr. Sunny Lopez for going out of their way to make this trip truly special. From the press shop and
+										the body shop to the assembly line, seeing robots work perfectly in sync was mesmerizing. Also inspiring was the amount of standardization that we saw in the XUVs and KUVs and the organization and cleanliness of all the facilities at the state
+										-of-the art plant. Implementing the safety and production management techniques we saw at Chakan, would be a big step in improving our own performance in the future. On this trip, we truly learnt and experienced the importance of precision,
+										efficiency, consistency and endurance. Equally humbling was the hospitality we received. After a delicious lunch, that was organized specially for us, we were given a surprise. The afternoon session on Arduino programming was truly the cherry
+										on top of a wonderful day! The staff gave detailed and clear explanations on all automations that we saw at the plant so that even the youngest of us could understand, and the personalized gift bags given to us at the end of the visit (with
+										the Arduino) were a pleasant surprise. Each and every one of us felt at home. We are extremely grateful for the time that everyone took to organize this inspiring trip, especially as a Chakan tour is not offered to people below the age of 18.
+										We also take home with us a message: we learnt how M&amp;M actively makes a difference to the community and to people who don’t have many opportunities. Our team, too, aspires to impact as many people as we can in our community who might not
+										have the same opportunities as us. Once again, thank you for all your support. This trip was incredibly memorable and M&amp;M will always have a special place in our hearts.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="image/wro.png" alt="Card image cap" style="padding: 5%">
+							<div class="card-body">
+								<h3 class="card-title text-center">World Robot Olympiad Mumbai Regionals 2017</h3>
+								<p class="card-text">We ran the 2017 World Robot Olympiad's Mumbai regionals in August 2017.
+									<br>
+									<a href="http://www.wroboto.org" target="_blank">Learn More.</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-4 box-shadow">
+							<img class="card-img-top" src="image/fll.png" alt="Card image cap" style="padding: 5%">
+							<div class="card-body">
+								<h3 class="card-title text-center">FIRST LEGO League Mumbai Regionals 2018</h3>
+								<p class="card-text">We ran the 2018 FIRST LEGO League: Hydrodynamics Mumbai regionals in January 2018.
+									<br>
+									<a href="https://www.firstinspires.org/robotics/fll" target="_blank">Learn More.</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="container py-5">
+		<div class="row">
+			<div class="col-12 col-md col-xl-2">
+				<img src="image/rfactor_bw.png" alt="R Factor logo" style="max-height:32px; margin-top:5%;">
+				<small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Events &amp; Outreach</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="events.html">Mahindra &amp; Mahindra</a></li>
+					<li><a class="text-muted" href="outreach.html">MindSplash</a></li>
+					<li><a class="text-muted" href="outreach.html">Children for Change</a></li>
+					<li><a class="text-muted" href="outreach.html">Equal Streets</a></li>
+					<li><a class="text-muted" href="outreach.html">Asha for Education</a></li>
+					<li><a class="text-muted" href="outreach.html">Women in STEM</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Handbooks &amp; Manuals</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="handbooks/Chairmans.pdf">Chairman's Award</a></li>
+					<li><a class="text-muted" href="handbooks/Robot_and_Engineering.pdf">Robot &amp; Engineering</a></li>
+					<li><a class="text-muted" href="handbooks/Engineering_Inspiration.pdf">Engineering&nbsp;Inspiration</a></li>
+					<li><a class="text-muted" href="handbooks/Safety_Manual.pdf">Safety Manual</a></li>
+					<li><a class="text-muted" href="handbooks/Game_and_Alliance.pdf">Game &amp; Alliance</a></li>
+					<li><a class="text-muted" href="handbooks/Marketing_and_Outreach.pdf">Marketing &amp; Outreach</a></li>
+					<li><a class="text-muted" href="handbooks/Team_and_Organisation.pdf">Team &amp; Organization</a></li>
+					<li><a class="text-muted" href="handbooks/FLL_Manual.pdf">FLL Manual for Coaches</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>About</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="about.html">Team</a></li>
+					<li><a class="text-muted" href="about.html">Achievements</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<nav class="navbar bottom navbar-light bg-dark justify-content-center">
+		<a class="navbar-brand" href="#"><img src="image/first_bw.png" alt="FIRST logo" style="max-height:48px; margin-top:5%;"></a>
+	</nav>
+	<nav class="navbar bottom navbar-light bg-dark justify-content-center">
+		<a href="https://www.facebook.com/team6024/" target="_blank" class="btn-social btn-facebook"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.instagram.com/team6024/" target="_blank" class="btn-social btn-instagram"><i class="fab fa-instagram"></i></a>
+		<a href="https://github.com/teamrfactor/website" target="_blank" class="btn-social btn-github"><i class="fab fa-github-alt"></i></a>
+		<a href="mailto:nilesh.wistem@gmail.com?subject=FRC_Query" target="_blank" class="btn-social btn-email"><i class="fas fa-envelope"></i></a>
+		<a href="https://www.thebluealliance.com/team/6024" target="_blank" class="btn-social btn-facebook"><img src="image/tba.png" alt="the blue alliance" style="max-height: 100%; max-width: 100%;"></a>
+	</nav>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')
+	</script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/holder.min.js"></script>
+	<script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+	</script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<!-- Bootstrap Dropdown Hover JS -->
+	<script src="js/bootstrap-dropdownhover.min.js"></script>
+	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+</body>
+
+</html>
